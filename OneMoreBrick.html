@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="graph.js"></script>
+    <script src="engine.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+
+    var gameField = document.createElement('div');
+    gameField.style.position = 'relative';
+    gameField.style.height = '700px';
+    gameField.style.width = '700px';
+    gameField.style.border = 'solid 1px green';
+    document.body.appendChild(gameField);
+
+    var arr = [];
+
+    for(var i = 0; i < 7; i++) {
+        if(Math.random() >= 0.5)
+            if (Math.random() >= 0.5)
+                arr.push(drawTriangle(gameField, i, Math.round(Math.random() * 3)));
+            else
+            arr.push(drawSquare(gameField, i));
+    }
+
+
+    //move(d,0,0);
+
+</script>
+
+</body>
+</html>
