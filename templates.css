@@ -1,0 +1,22 @@
+.square{
+    position:absolute;
+    top: 1px;
+    width: 96px;
+    height: 96px;
+    background: black;
+    color : white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.triangle{
+    position: absolute;
+    top: 1px;
+    width: 96px;
+    height: 96px;
+    border: solid 48px transparent;
+    display: flex;
+    color: white;
+    font-size: 30px;
+}
