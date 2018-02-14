@@ -17,17 +17,16 @@
 <script>
 
     var gameField = document.createElement('div');
-    gameField.style.position = 'relative';
-    gameField.style.height = '700px';
-    gameField.style.width = '700px';
-    gameField.style.border = 'solid 1px green';
+    gameField.classList.add('gameField');
     document.body.appendChild(gameField);
 
-
     Box.parent = gameField;
+    Ball.setParent(gameField);
 
     Box.drawBoxes();
     Box.moveBoxesDown();
+
+    Ball.setFirstBall(new Ball(678,878,0,0));
 
     //move(d,0,0);
 

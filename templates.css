@@ -1,6 +1,6 @@
 .square{
     position:absolute;
-    top: 1px;
+    top: 101px;
     width: 96px;
     height: 96px;
     background: black;
@@ -12,11 +12,17 @@
 }
 .triangle{
     position: absolute;
-    top: 1px;
+    top: 101px;
     width: 96px;
     height: 96px;
     border: solid 48px transparent;
     display: flex;
     color: white;
     font-size: 30px;
+}
+.gameField{
+    position: relative;
+    height: 900px;
+    width: 700px;
+    border: solid 1px green;
 }

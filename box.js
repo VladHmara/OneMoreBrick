@@ -1,7 +1,7 @@
 class Box {
     constructor(x, type) {
         this.x = x;
-        this.y = 0;
+        this.y = 1;
         this.type = type;
         this.life = Box.count;
         Box.boxes.push(this);
@@ -79,8 +79,8 @@ class Box {
                 clearInterval(interval);
             }
             ins.div.style.top = ins.y * 100 - count + 1 + 'px';
-            count--;
-        }, 0);
+            count-=5;
+        }, 1000/60);
     }
 
 }
