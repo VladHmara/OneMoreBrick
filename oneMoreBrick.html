@@ -24,9 +24,14 @@
     Ball.setParent(gameField);
 
     Box.drawBoxes();
-    Box.moveBoxesDown();
 
-    Ball.setFirstBall(new Ball(678,878,0,0));
+    Ball.setFirstBall(new Ball(0,898-2*Ball.r,0,0));
+
+    var arrow = document.createElement('div');
+    arrow.classList.add('arrow');
+
+    gameField.appendChild(arrow);
+    Box.arrow = arrow;
 
     //move(d,0,0);
 

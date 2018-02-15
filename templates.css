@@ -1,6 +1,6 @@
 .square{
     position:absolute;
-    top: 101px;
+    top: 1px;
     width: 96px;
     height: 96px;
     background: black;
@@ -12,7 +12,7 @@
 }
 .triangle{
     position: absolute;
-    top: 101px;
+    top: 1px;
     width: 96px;
     height: 96px;
     border: solid 48px transparent;
@@ -25,4 +25,12 @@
     height: 900px;
     width: 700px;
     border: solid 1px green;
+}
+.arrow{
+    position : absolute;
+    height: 0px;
+    border-top: dotted 5px black;
+    transform-origin: left top;
+    display: flex;
+    z-index: 99999999;
 }
