@@ -58,11 +58,14 @@ class Ball {
             ins.x += ins.sx * Ball.speed;
             ins.y += ins.sy * Ball.speed;
 
-            if (ins.x <= 0 || ins.x + 2 * Ball.r >= 698)
-                ins.sx *= -1;
+            if (ins.x <= 0)
+                ins.sx = Math.abs(ins.sx);
+
+            if(ins.x + 2 * Ball.r >= 698)
+                ins.sx = -1 * Math.abs(ins.sx);
 
             if (ins.y <= 0)
-                ins.sy *= -1;
+                ins.sy = Math.abs(ins.sy);
 
             if (ins.y + 2 * Ball.r >= 900) {
                 if (Ball.firstBall == null) {
@@ -146,6 +149,6 @@ Ball.firstBall = null;
 Ball.startPointX = 678;
 Ball.startPointY = 878;
 Ball.r = 10;
-Ball.speed = 10;
+Ball.speed = 15;
 Ball.color = 'blue';
 Ball.count = 1;

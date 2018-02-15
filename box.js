@@ -167,7 +167,6 @@ class Box {
                     if (ball.x + 2 * Ball.r > x &&
                         ball.y < y + 96 &&
                         ball.y + 2 * Ball.r > ball.x - x + y) {
-                        console.log(vx + ' ' + vy);
                         if (vx > vy) { //верхняя правая
                             var tmp = ball.sx;
                             ball.sx = ball.sy;
